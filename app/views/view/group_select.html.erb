@@ -1,0 +1,19 @@
+<%= form_for(@review) do |f| %>
+  レビュー対象書籍：
+  <%= f.grouped_collection_select :book_id, @authors, :books, :name, :id, :title %>
+<% end %>
+
+<select id="review_book_id" name="review[book_id]">
+  <optgroup label="山田祥寛">
+    <option value="1">改訂新版JavaScript本格入門</option>
+    <option value="2">初めてのJSP&サーブレット第2版</option>
+    <option value="5">アプリを作ろう！Android入門</option>
+    <option value="8">プログラマのためのDocker教科書</option>
+    <option value="9">AngularJSアプリケーションプログラミング</option>
+  </optgroup>
+
+  <optgroup label="佐藤一郎">
+    <option value="2">初めてのJSP&サーブレット第2版</option>
+    <option value="3">Javaポケットリファレンス</option>
+    <option value="4">アプリを作ろう！VisualC++入門</option>
+  </optgroup>

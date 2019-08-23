@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   resources :books
   get 'view/keyword'
   post 'keyword/serch'
+  get 'view/form_tag'
+  post 'view/create'
+  get 'view/group_select'
+  get 'view/fields'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
