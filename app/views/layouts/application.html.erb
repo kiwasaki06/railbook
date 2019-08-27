@@ -10,5 +10,6 @@
 
   <body>
     <%= yield %>
+    <%= auto_discovery_link_tag(:rss, {controller: :books, acion: :index, id: :rails }, title: 'サーバーサイドの学び舎 -WINGS-') %>
   </body>
 </html>
